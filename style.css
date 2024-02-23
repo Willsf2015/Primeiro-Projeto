@@ -20,13 +20,35 @@ html {
 .topHeader {
    display:flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-around;
    padding: 5px 25px;
    background-color: #1870a7;
 }
 
+.contactsT{
+   display: flex;
+   justify-content: space-between;
+   width: 90px;
+   align-items: center;
+   position: relative;
+   left: 1px;
+}
+.contactsE{
+   display: flex;
+   justify-content:space-between;
+   width: 170px;
+   align-items: center;
+   
+   position: inherit;
+}
+
+.cart {
+   position: relative;
+   right:50px;
+}
+
 ul#socialMedia{
-   padding-right: 500px;;
+   padding-right: 50vw;
 }
 .topHeader span {
    color:#fff;
@@ -58,15 +80,16 @@ a:link {
 
 .logo img {
    width:150px;
-   margin: 10px;
+   
 }
 
 nav {
    background: white;
    display: flex;
-   padding: 1px 20px;
+   padding: 1px 0px;
    align-items: center;
    justify-content: center;
+   width: 100%;
 }
 
 .navBar ul li a {
@@ -155,13 +178,14 @@ nav ul li a:hover {
    }
    .mobileMenu a:hover{
       color:#1870a7;
+      transition: 350ms ease-in;
       
    }
 
 }
 
-@media screen and (max-width:600px){
-   span.telephon, span.email {
+@media screen and (max-width:1000px){
+   .contactsT, .contactsE {
       display: none;
    }
 }
