@@ -83,10 +83,19 @@ html {
 
  .mainHeader {
     width: 100vw;
-    height: 7em;
+    height: 6em;
     background-color: white;
  }
-.logo img {
-    width: 22vw;
-    padding-left: 10em;
+ .logo {
+   /* background-color: blue; */
+   display: flex;
+   width: 15vw;
+   height:6em;
+ }
+.mainHeader .logo img {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   left:11vw;
+   
 }
