@@ -5,7 +5,6 @@
     list-style: none;
     border: none;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -15,87 +14,150 @@ html {
     overflow-x: hidden;
 }
  body {
-    background-color: grey;
+   font-family: 'Roboto', sans-serif;
  }
 
- header {
-    width: 100vw;
-    height: 15vh;
-    position: fixed;
- }
- .topHeader {
-    width: 100vw;
-    height:3em;
-    background-color: #1870a7;
-    display: flex;
-    
- }
-.contactsPlusMedia {
-    /* background-color: blueviolet; */
-    position: relative;
-    left: 10vw;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    height: 3em;
-    width:45vw;
-    color: white;
-    
- }
- .contactsList, .mediaList, .cart {
-    /* background-color:yellow; */
-    display: flex;
+.topHeader {
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 5px 25px;
+   background-color: #1870a7;
+}
 
- }
+.topHeader span {
+   color:#fff;
+}
 
- .contactsList li, 
- .mediaList li {
-    padding-left: 0.7em;
-    padding-right: 0.7em; */
- } */
+.topHeader ul {
+   display:flex;
+}
 
- .contactsList li i,  */
- .contactsList li span {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
- }
-
-#telegram, #linkedin, #facebook, #twitter, #rss, #youtube, #email, #telephon, #cart  {
-    font-size: 1.6em;
+.topHeader li {
+   margin: 0px 5px;
 }
 
 
-.cart {
-    position: relative;
-    left: 35vw;
+
+#telephon, #email, #youtube, #facebook, #telegram, #rss, #linkedin,#twitter, #cart {
+   font-size: 15px;
+   color: white;
 }
 
+.topHeader i:hover, .topHeader a:hover, .topHeader span #email:hover, .topHeader span #telephon:hover, .topHeader span:hover {
+   color:#889ba7;
+   transition: 350ms ease-in;
+}
 
- .topHeader a:link, .topHeader a:visited {
-    color: white;
- }
+a:link {
+   color: white;
+}
 
- .topHeader a:hover {
-    color:hsl(203, 76%, 84%);
-    transition: 350ms ease-in;
- }
+.logo img {
+   width:150px;
+   margin: 10px;
+}
 
-
- .mainHeader {
-    width: 100vw;
-    height: 6em;
-    background-color: white;
- }
- .logo {
-   /* background-color: blue; */
+nav {
+   background: white;
    display: flex;
-   width: 15vw;
-   height:6em;
- }
-.mainHeader .logo img {
-   height: 100%;
-   width: 100%;
-   position: relative;
-   left:11vw;
-   
+   padding: 1px 20px;
+   align-items: center;
+   justify-content: center;
+}
+
+nav a {
+   color: #666
+}
+
+nav a:hover {
+   color:#1870a7;
+   transition: 350ms ease-in;
+}
+
+.logo {
+   flex: 0.5;
+}
+
+.menu {
+   display: flex;
+   align-items: center;
+}
+
+.menu li {
+   padding: 15px 10px;
+   font-size:13px;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+.toggle {
+   font-size: 30px;
+   display: none;
+}
+
+.mobileMenu{
+   display: none;
+}
+
+@media screen and (max-width:730px){
+   .navBar{
+      padding: 1.5rem 4rem;
+   }
+
+   .navItem{
+      display: none;
+   }
+   .toggle {
+      display: block;
+      position: relative;
+      top: 7px;
+      left: 20px;
+   }
+
+   .toggle button img{
+      width: 40px;
+   }
+
+   .toggle button{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      
+   }
+   .mobileMenu ul{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      transition: 350ms;
+
+   }
+   .mobileMenu .navItem{
+      display: block;
+      padding-top: 1.2rem;
+      transition: 350ms;
+   }
+   .open{
+      display: block;
+   }
+   .mobileMenu ul li{
+      padding: 15px 10px;
+      font-size:13px;
+      text-transform: uppercase;
+      font-weight: 700;
+   }
+   .mobileMenu a:visited{
+      color: #666;
+   }
+   .mobileMenu a:hover{
+      color:#1870a7;
+      transition: 350ms ease-in;
+   }
+
+}
+
+@media screen and (max-width:600px){
+   span.telephon, span.email {
+      display: none;
+   }
 }

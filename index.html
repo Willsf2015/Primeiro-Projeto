@@ -15,87 +15,116 @@
   <body>
     <header>
       <div class="topHeader">
-        <div class="contactsPlusMedia">
-          <div class="contacts">
-            <ul class="contactsList">
-              <li>
-                <i id="telephon" class="bi bi-telephone-fill"> </i>
-                <span id="telephonNum">0800 888 1482 </span>
-              </li>
-              <li>
-                <a
-                  id="email"
-                  href="mailto:open@opentreinamentos.com.br"
-                  target="_blank"
-                >
-                  <i class="bi bi-envelope-fill"> </i>
-                </a>
-                <a
-                  id="emailOpen"
-                  href="mailto:open@opentreinamentos.com.br"
-                  target="_blank"
-                  ><span id="emailEnd">open@opentreinamentos.com.br</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="socialMedia">
-            <ul class="mediaList">
-              <li>
-                <a id="telegram" href="https://t.me/focotributario"
-                  ><i class="bi bi-telegram"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  id="linkedin"
-                  href="https://www.linkedin.com/company/open-treinamentos-empresariais-e-editora/"
-                  ><i class="bi bi-linkedin"></i
-                ></a>
-              </li>
-              <li id="youtube">
-                <a href="https://www.youtube.com/user/opentreinamentos"
-                  ><i class="bi bi-youtube"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  id="facebook"
-                  href="https://www.facebook.com/opentreinamentos/"
-                  ><i class="bi bi-facebook"></i
-                ></a>
-              </li>
-              <li>
-                <a id="twitter" href="https://twitter.com/OpenTreinamento"
-                  ><i class="bi bi-twitter-x"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  id="rss"
-                  href="http://feeds.feedburner.com/OpenTreinamentosEditora"
-                  ><i class="bi bi-rss"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="cart">
-            <a id="cart" href="https://opentreinamentos.com.br/carrinho/"
-              ><i class="bi bi-cart-fill"></i
-            ></a>
-          </div>
-        </div>
+        <span class="telephon">
+          <i id="telephon" class="bi bi-telephone-fill"></i>0800 888 1482
+        </span>
+        <span class="email">
+          <a href="mailto:open@opentreinamentos.com.br" target="_blank">
+            <i id="email" class="bi bi-envelope-fill"> </i
+          ></a>
+          <a
+            id="emailOpen"
+            href="mailto:open@opentreinamentos.com.br"
+            target="_blank"
+            >open@opentreinamentos.com.br
+          </a>
+        </span>
+        <ul id="socialMedia">
+          <li>
+            <a id="telegram" href="https://t.me/focotributario" target="_blank"
+              ><i class="bi bi-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              id="linkedin"
+              href="https://www.linkedin.com/company/open-treinamentos-empresariais-e-editora/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              id="youtube"
+              href="https://www.youtube.com/user/opentreinamentos"
+              target="_blank"
+              ><i class="bi bi-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              id="facebook"
+              href="https://www.facebook.com/opentreinamentos/"
+              target="_blank"
+              ><i class="bi bi-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              id="twitter"
+              href="https://twitter.com/OpenTreinamento"
+              target="_blank"
+              ><i class="bi bi-twitter-x"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              id="rss"
+              href="http://feeds.feedburner.com/OpenTreinamentosEditora"
+              target="_blank"
+              ><i class="bi bi-rss"></i>
+            </a>
+          </li>
+        </ul>
+        <span class="cart">
+          <a
+            id="cart"
+            href="https://opentreinamentos.com.br/carrinho/"
+            target="_blank"
+            ><i class="bi bi-cart-fill"></i
+          ></a>
+        </span>
       </div>
-      <div class="mainHeader">
+      <nav class="navBar">
         <div class="logo">
           <!-- <p>ISSO AQUI É UM TESTE</p> -->
-          <img
-            src="https://i.postimg.cc/YCH5WgFm/logo-open-solucoes-padrao-definitivo.png"
-            alt="logoOpen"
-          />
+          <a href="https://opentreinamentos.com.br/"
+            ><img
+              src="https://i.postimg.cc/YCH5WgFm/logo-open-solucoes-padrao-definitivo.png"
+              alt="logoOpen"
+          /></a>
         </div>
-      </div>
+        <ul class="menu">
+          <li class="navItem"><a href="#">Empresa</a></li>
+          <li class="navItem"><a href="#">Cursos</a></li>
+          <li class="navItem"><a href="#">In company</a></li>
+          <li class="navItem"><a href="#">Consultoria Tributária</a></li>
+          <li class="navItem"><a href="#">Loja</a></li>
+          <li class="navItem"><a href="#">Blog</a></li>
+          <li class="navItem"><a href="#">Contatos</a></li>
+          <li class="navItem">
+            <a href="#"><i class="bi bi-search"></i></a>
+          </li>
+        </ul>
+        <div class="toggle">
+          <button onclick="menuShow()"><img class="icon" src="https://i.postimg.cc/SKBsXNnr/listapng.png"alt=""></button>
+        </div>
+      </nav>
+      <div class="mobileMenu">
+        <ul>
+          <li class="navItemM"><a href="#">Empresa</a></li>
+          <li class="navItemM"><a href="#">Cursos</a></li>
+          <li class="navItemM"><a href="#">In company</a></li>
+          <li class="navItemM"><a href="#">Consultoria Tributária</a></li>
+          <li class="navItemM"><a href="#">Loja</a></li>
+          <li class="navItemM"><a href="#">Blog</a></li>
+          <li class="navItemM"><a href="#">Contatos</a></li>
+          <li class="navItemM">
+            <a href="#"><i class="bi bi-search"></i></a>
+          </li>
+        </ul>
     </header>
+    <script src="script.js"></script>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci velit,
       euismod ac viverra et, tincidunt a mi. Maecenas molestie dapibus ligula
