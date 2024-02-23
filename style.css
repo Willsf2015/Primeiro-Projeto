@@ -25,6 +25,9 @@ html {
    background-color: #1870a7;
 }
 
+ul#socialMedia{
+   padding-right: 500px;;
+}
 .topHeader span {
    color:#fff;
 }
@@ -151,7 +154,7 @@ nav a:hover {
    }
    .mobileMenu a:hover{
       color:#1870a7;
-      transition: 350ms ease-in;
+      
    }
 
 }
