@@ -182,4 +182,15 @@ main {
       .logo img {
          width: 100px;
       }
+     .top-header-container a {
+         font-size: 25px;
+         color: white;
+      }
+      .top-header-container ul{
+         display:flex;
+         flex-grow:1;
+         column-gap: 3vw;
+         align-items: center;}
    }
+
+
